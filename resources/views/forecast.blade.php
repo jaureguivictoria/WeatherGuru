@@ -8,7 +8,7 @@
     
 @endsection
 
-@section('content')    
+@section('content')
     <main role="main" class="container" id="app">
         <div class="starter-template">
             <div class="form-inline">
@@ -16,9 +16,11 @@
                     <img src="{{url('img/logo.png')}}" alt="WeatherGuru" class="mx-auto d-block mt-3" width="64">
                 </a>
                 <h2 class="mt-3 ml-3">Weather Guru</h2>
-            </div>
+            </div> 
             
             <h3 class="font-weight-bold mt-3">{{$location}}</h3>
+            
+            @include('shared.errors')
             
             <h4 class="mt-4">{{trans('messages.forecast')}}</h4>
             <div class="container mt-3">

@@ -25,6 +25,11 @@ label.error {
     top: -2em
 }
 
+li.error {
+    color: red;
+    list-style: none;
+}
+
 span.badge {
     font-size: 16px;
     margin-bottom: 4px;

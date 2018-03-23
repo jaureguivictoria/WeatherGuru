@@ -17,6 +17,9 @@
             <img src="{{url('img/logo.png')}}" alt="WeatherGuru" class="mx-auto d-block mt-5">
         </a>
     </div>
+    
+    @include('shared.errors')
+    
     <main role="main" class="container" id="app">
         <div class="starter-template">
             <h1>{{trans('messages.welcome')}}</h1>

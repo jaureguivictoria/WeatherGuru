@@ -14,8 +14,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Validator::extend('coordinates', function ($attribute, $value, $parameters, $validator) {
-            return preg_match("/^[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?),\s*[-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)$/", $value) === 1;
+        Validator::extend('latitude', function ($attribute, $value, $parameters, $validator) {
+            return preg_match("/^(\+|-)?(?:90(?:(?:\.0{1,6})?)|(?:[0-9]|[1-8][0-9])(?:(?:\.[0-9]{1,6})?))/", $value) === 1;
+        });
+        
+        Validator::extend('longitude', function ($attribute, $value, $parameters, $validator) {
+            return preg_match("/^(\+|-)?(?:180(?:(?:\.0{1,6})?)|(?:[0-9]|[1-9][0-9]|1[0-7][0-9])(?:(?:\.[0-9]{1,6})?))/", $value) === 1;
         });
     }
 

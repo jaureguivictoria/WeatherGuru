@@ -106,7 +106,8 @@ return [
         ],
     ],
     
-    'coordinates' => ':attribute is not a validate coordinate',
+    'latitude' => 'Invalid latitude',
+    'longitude' => 'Invalid longitude',
 
     /*
     |--------------------------------------------------------------------------

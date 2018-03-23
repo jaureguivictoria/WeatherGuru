@@ -3,6 +3,7 @@
 namespace WeatherGuru\Http\Controllers;
 
 use Illuminate\Http\Request;
+use WeatherGuru\Http\Requests\SearchForecastRequest;
 use DarkSky;
 use Cache;
 use Response;
@@ -15,7 +16,7 @@ class ForecastController extends Controller
      * @param  Request $request
      * @return Response
      */
-    public function search(Request $request)
+    public function search(SearchForecastRequest $request)
     {
         $expire = now()->addHours(1);
         $lat = $request->get('lat');
