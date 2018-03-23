@@ -40,7 +40,7 @@
                 </div>
                 <div class="form-inline">
                     <div class="col-md-3 offset-md-4">
-                        {!! Form::select('unit', ['si' => trans('units.metric'), 'us' => trans('units.imperial')],'si',['class' => 'form-control mt-4']) !!}
+                        {!! Form::select('unit', ['si' => trans('units.metric'), 'us' => trans('units.imperial')],'si',['class' => 'form-control mt-4 mr-2']) !!}
                         {!! Form::submit(trans('messages.forecast'),['class' => 'btn btn-info mt-4']) !!}
                     </div>
                 </div>

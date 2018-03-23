@@ -13685,6 +13685,14 @@ module.exports = __webpack_require__(37);
 
 __webpack_require__(12);
 
+$(document).ready(function () {
+
+    $("a.btn").click(function () {
+        $("main").hide();
+        $("#loader").toggleClass('invisible');
+    });
+});
+
 /***/ }),
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {

@@ -7,3 +7,15 @@
 
 require('./bootstrap');
 
+
+
+$(document).ready(function(){
+
+    $("a.btn").click(function(){
+        $("main").hide();
+        $("#loader").toggleClass('invisible');
+    });
+    
+});
+
+

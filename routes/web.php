@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('search', ['as' => 'search', 'uses' => 'ForecastController@search']);
+Route::get('historical/search', ['as' => 'historicalSearch', 'uses' => 'ForecastController@historicalSearch']);
