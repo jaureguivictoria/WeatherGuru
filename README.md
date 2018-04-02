@@ -3,6 +3,10 @@ Weather Guru is an application that allows the user to view the observed (in the
 
 It is made using PHP 7 and Laravel Framework.
 
+## Demo
+
+Check it live in here: http://weather-guru.herokuapp.com/
+
 ## Views
 
 There are 3 views:
