@@ -20,4 +20,7 @@
 <!-- Styles -->
 <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 
+<!-- Google Verification -->
+<meta name="google-site-verification" content="T_gFU8G40n1NoQxeqVh4riwE6ktKwHEv-4GpNruIYrY" />
+
 @yield('styles')
